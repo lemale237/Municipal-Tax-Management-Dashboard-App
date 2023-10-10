@@ -20,7 +20,7 @@ Le tableau de bord affiche plusieurs graphiques et métriques pour suivre en tem
 - Historique des paiements
 - Localisation géographique des défauts de paiement
 
-![Aperçu du tableau de bord](dashboard.png)
+![Aperçu du tableau de bord](1.png)
 
 ## Fonctionnalités
 
@@ -45,4 +45,19 @@ Les principales fonctionnalités du tableau de bord sont :
 **Étape 1** : Cloner le dépôt GitHub
 
 ```bash
-git clone https://github.com/votre-compte/tableau-bord-taxes-municipales.git
+https://github.com/lemale237/Municipal-Tax-Management-Dashboard-App.git
+
+
+**Étape 2** : Créer un environnement virtuel et installer les dépendances
+
+```bash
+cd tableau-bord-taxes-municipales
+python3 -m venv venv
+source venv/bin/activate  
+pip install -r requirements.txt
+
+**Étape 4** : Exécuter le script de génération de données factices
+
+```bash
+python script.py
+
