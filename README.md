@@ -1,63 +1,94 @@
 # Municipal-Tax-Management-Dashboard-App
+
 Interactive dashboard for real-time monitoring of municipal tax payments. Built with Flask (API), Dash (GUI) and Plotly (charts). Displays key metrics like paid/unpaid amounts, trends, campaign efficiency. Fetches data from Flask API connected to MySQL. Includes fake data generator. Auto-refreshes every 10 sec. Responsive design. 
 
+# Municipal Tax Management Dashboard
 
-# Tableau de bord de gestion des taxes municipales
+This project consists of a dashboard for real-time visualization of municipal tax management data from Douala 3rd district city hall.
 
-Ce projet consiste en un tableau de bord pour la visualisation en temps réel des données de gestion des taxes municipales de la mairie de Douala 3ème.
+## Dashboard Overview
 
-## Aperçu du tableau de bord
+The dashboard displays several charts and metrics to monitor in real-time:
 
-Le tableau de bord affiche plusieurs graphiques et métriques pour suivre en temps réel :
+- Total amount of paid and unpaid taxes
+- Number of paid and unpaid taxes  
+- Breakdown of payment methods
+- Payment defaults per month
+- Payment rate per tax type
+- Recovery campaign efficiency
+- Payment and recovery trends
+- Payment history
+- Geographical location of payment defaults
 
-- Montant total des taxes payées et impayées
-- Nombre de taxes payées et impayées  
-- Répartition des moyens de paiement
-- Défauts de paiement par mois
-- Taux de paiement par type de taxe
-- Efficacité des campagnes de recouvrement
-- Tendances des paiements et recouvrements
-- Historique des paiements
-- Localisation géographique des défauts de paiement
+![Dashboard preview](1.png)
 
-![Aperçu du tableau de bord](1.png)
+## Features  
 
-## Fonctionnalités
+The key features of the dashboard are:
 
-Les principales fonctionnalités du tableau de bord sont :
+- **Real-time update**: Data is fetched in real-time from the Flask API to provide up-to-date metrics.
 
-- **Mise à jour en temps réel** : Les données sont récupérées en temps réel depuis l'API Flask pour fournir des métriques à jour.
-- **Visualisations interactives** : Les graphiques sont construits avec Plotly et Dash pour permettre une expérience interactive (survol, zoom etc).
-- **Design responsive** : Le tableau de bord s'adapte aux écrans desktop et mobile. 
-- **Thème sombre** : L'interface utilise une palette de couleurs sombres pour un meilleur confort visuel.
+- **Interactive visualizations**: Charts are built with Plotly and Dash to enable interactive experience (hover, zoom etc).
 
-## Technologies utilisées
+- **Responsive design**: The dashboard adapts to desktop and mobile screens. 
 
-- **Python** : Pour le script de génération de données factices, l'API Flask et le tableau de bord Dash.
-- **MySQL** : Pour le stockage des données.
-- **Flask** : Framework Python pour construire l'API REST.
-- **Dash** : Bibliothèque Python pour créer des tableaux de bord web interactifs.
-- **Plotly** : Bibliothèque JavaScript de graphiques pour la visualisation.
-- **Bootstrap** : Framework CSS pour le style et la mise en page responsive.
+- **Dark theme**: The interface uses a dark color palette for improved visual comfort.
+
+## Technologies Used
+
+- **Python**: For fake data injection script, Flask API and Dash dashboard.
+
+- **MySQL**: For data storage.
+
+- **Flask**: Python framework for building the REST API.
+
+- **Dash**: Python library for creating interactive web dashboards.
+
+- **Plotly**: JavaScript graphing library for visualization.
+
+- **Bootstrap**: CSS framework for styling and responsive layout.
 
 ## Installation
 
-**Étape 1** : Cloner le dépôt GitHub
+**Step 1**: Clone the GitHub repository
 
 ```bash
 https://github.com/lemale237/Municipal-Tax-Management-Dashboard-App.git
+```
 
-
-**Étape 2** : Créer un environnement virtuel et installer les dépendances
+**Step 2: Creating a virtual environment and installing dependencies
 
 ```bash
-cd tableau-bord-taxes-municipales
+cd Municipal-Tax-Management-Dashboard-App
 python3 -m venv venv
 source venv/bin/activate  
 pip install -r requirements.txt
-
-**Étape 4** : Exécuter le script de génération de données factices
+```
+**Step 3** : Run the script to generate dummy data
 
 ```bash
 python script.py
+```
+**Step 4**: Start the Flask API
 
+```bash
+python API.py
+```
+
+**Step 5**: Start the Dash dashboard
+
+```bash
+python dashboard.py
+```
+
+The dashboard can be accessed at [http://localhost:8050/](http://localhost:8050/)
+
+Author
+
+Author's name - kamtsa.aubin@gmail.com
+
+Project link: [https://github.com/votre-compte/tableau-bord-taxes-municipales](https://github.com/lemale237/Municipal-Tax-Management-Dashboard-App.git)
+
+Licence
+
+This project is licensed under the MIT license - see the LICENSE file for details.
